@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Apprenez à créer des formulaires en HTML et découvrez les différents types d'input disponibles.">
+  <meta name="keywords" content="HTML, formulaire HTML, input HTML, type d'input, web développement">
+  <meta name="author" content="Votre Nom">
+  <title>Formulaire et Types d'Input en HTML</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .container {
+      max-width: 960px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    section {
+      margin-bottom: 20px;
+    }
+    section h2 {
+      color: #444;
+    }
+    p {
+      color: #666;
+      line-height: 1.6;
+    }
+    form {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    input[type="submit"] {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  <nav style="background-color: #333; padding: 10px; text-align: center;">
+    <a href="./chap3.html" style="color: white; text-decoration: none; margin-right: 15px;">Attributs HTML</a>
+    <a href="./index.html"   style="color: white; text-decoration: none; margin-right: 15px;">Éléments HTML</a>
+    <a href="./chap2.html" style="color: white; text-decoration: none; margin-right: 15px;">Formulaires HTML</a>
+    <a href="./chap1.html"  style="color: white; text-decoration: none;">Importance des Meta</a>
+  </nav>
+  <div class="container">
+    <h1>Les Formulaires et Types d'Input en HTML</h1>
+
+    <section>
+      <h2>1. Introduction aux Formulaires HTML</h2>
+      <p>
+        Un formulaire HTML est une manière de collecter des informations auprès des utilisateurs. Les données saisies peuvent être envoyées à un serveur pour traitement. Chaque formulaire est composé de divers éléments tels que des champs d'entrée, des boutons, des cases à cocher, des listes déroulantes, etc.
+      </p>
+      <p>Voici un exemple simple de formulaire :</p>
+
+      <form action="/submit" method="POST">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <input type="submit" value="Envoyer">
+      </form>
+    </section>
+
+    <section>
+      <h2>2. Les Types d'Input en HTML</h2>
+      <p>
+        HTML offre plusieurs types de champs d'entrée que vous pouvez utiliser dans vos formulaires pour obtenir différents types de données. Voici une liste des types d'input les plus courants :
+      </p>
+      
+      <ul>
+        <li><strong>Texte :</strong> <code>&lt;input type="text"&gt;</code> - Champ de texte standard pour les petites entrées textuelles.</li>
+        <li><strong>Email :</strong> <code>&lt;input type="email"&gt;</code> - Champ pour les adresses email. Il valide les emails au format correct.</li>
+        <li><strong>Mot de passe :</strong> <code>&lt;input type="password"&gt;</code> - Champ où les caractères sont masqués.</li>
+        <li><strong>Nombre :</strong> <code>&lt;input type="number"&gt;</code> - Champ pour entrer des nombres, avec la possibilité de définir des plages.</li>
+        <li><strong>Date :</strong> <code>&lt;input type="date"&gt;</code> - Permet de sélectionner une date.</li>
+        <li><strong>Case à cocher :</strong> <code>&lt;input type="checkbox"&gt;</code> - Utilisé pour les options à cocher.</li>
+        <li><strong>Bouton radio :</strong> <code>&lt;input type="radio"&gt;</code> - Permet de choisir une seule option parmi plusieurs.</li>
+        <li><strong>Liste déroulante :</strong> <code>&lt;select&gt;</code> - Crée une liste déroulante pour choisir parmi plusieurs options.</li>
+        <li><strong>Fichier :</strong> <code>&lt;input type="file"&gt;</code> - Permet à l'utilisateur de télécharger un fichier.</li>
+        <li><strong>Bouton de soumission :</strong> <code>&lt;input type="submit"&gt;</code> - Bouton pour envoyer le formulaire.</li>
+        
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. Exemple de Formulaire Complet</h2>
+      <p>Voici un exemple plus complet de formulaire avec différents types d'inputs :</p>
+
+      <form action="/submit" method="POST">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" name="password" placeholder="Entrez un mot de passe" required>
+
+        <label for="age">Âge :</label>
+        <input type="number" id="age" name="age" min="18" max="100">
+
+        <label for="date_naissance">Date de naissance :</label>
+        <input type="date" id="date_naissance" name="date_naissance">
+
+        <label for="genre">Genre :</label>
+        <input type="radio" id="homme" name="genre" value="homme">
+        <label for="homme">Homme</label>
+        <input type="radio" id="femme" name="genre" value="femme">
+        <label for="femme">Femme</label>
+
+        <label for="interets">Centres d'intérêt :</label>
+        <input type="checkbox" id="sport" name="interets" value="sport">
+        <label for="sport">Sport</label>
+        <input type="checkbox" id="lecture" name="interets" value="lecture">
+        <label for="lecture">Lecture</label>
+
+        <label for="pays">Pays :</label>
+        <select id="pays" name="pays">
+          <option value="tunisie">Tunisie</option>
+          <option value="france">France</option>
+          <option value="canada">Canada</option>
+        </select>
+
+        <label for="fichier">Télécharger un fichier :</label>
+        <input type="file" id="fichier" name="fichier">
+
+        <input type="submit" value="Envoyer">
+      </form>
+    </section>
+
+    <section>
+      <h2>Conclusion</h2>
+      <p>
+        Les formulaires HTML permettent d'interagir avec les utilisateurs et de collecter des données. En fonction des informations que vous souhaitez obtenir, vous pouvez utiliser différents types d'input pour garantir une collecte de données correcte et efficace. Bien comprendre ces types vous aidera à créer des formulaires bien structurés et conviviaux.
+      </p>
+    </section>
+  </div>
+</body>
+</html>

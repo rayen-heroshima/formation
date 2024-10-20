@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Apprenez les éléments principaux de HTML, essentiels pour créer des pages web.">
+  <meta name="keywords" content="HTML, éléments HTML, balises HTML, apprentissage HTML, web développement">
+  <meta name="author" content="Votre Nom">
+  <title>Les éléments principaux de HTML</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+    }
+    .container {
+      max-width: 960px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    section {
+      margin-bottom: 20px;
+    }
+    section h2 {
+      color: #555;
+    }
+    p {
+      color: #666;
+      line-height: 1.6;
+    }
+    code {
+      background-color: #eee;
+      padding: 2px 5px;
+      font-family: monospace;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <nav style="background-color: #333; padding: 10px; text-align: center;">
+    <a href="./chap3.html" style="color: white; text-decoration: none; margin-right: 15px;">Attributs HTML</a>
+    <a href="./index.html"   style="color: white; text-decoration: none; margin-right: 15px;">Éléments HTML</a>
+    <a href="./chap2.html" style="color: white; text-decoration: none; margin-right: 15px;">Formulaires HTML</a>
+    <a href="./chap1.html"  style="color: white; text-decoration: none;">Importance des Meta</a>
+  </nav>  
+  <div class="container">
+    <h1>Les éléments principaux de HTML</h1>
+
+    <section>
+      <h2>1. Introduction aux éléments HTML</h2>
+      <p>
+        Un élément HTML est une partie essentielle de la structure d'une page web. Les éléments HTML sont utilisés pour décrire la structure et le contenu d'une page, et ils sont définis à l'aide de balises (tags) entourées de crochets <code>&lt;&gt;</code>.
+      </p>
+      <p>
+        Chaque élément HTML est composé d'une balise ouvrante, d'un contenu et d'une balise fermante. Par exemple, pour créer un titre, vous pouvez utiliser l'élément <code>&lt;h1&gt;</code> :
+      </p>
+      <code>&lt;h1&gt;Ceci est un titre&lt;/h1&gt;</code>
+    </section>
+
+    <section>
+      <h2>2. Les éléments HTML les plus importants</h2>
+      <p>Voici quelques éléments de base essentiels pour toute page HTML :</p>
+      <ul>
+        <li><strong>&lt;html&gt;</strong> : L'élément racine qui englobe toute la page web.</li>
+        <li><strong>&lt;head&gt;</strong> : Contient des méta-informations sur le document, comme le titre, les styles, et les scripts.</li>
+        <li><strong>&lt;title&gt;</strong> : Définit le titre de la page, affiché dans l'onglet du navigateur.</li>
+        <li><strong>&lt;body&gt;</strong> : Contient tout le contenu visible de la page (textes, images, vidéos, etc.).</li>
+        <li><strong>&lt;h1&gt; à &lt;h6&gt;</strong> : Définit des titres de différents niveaux, <code>&lt;h1&gt;</code> étant le plus important et <code>&lt;h6&gt;</code> le moins important.</li>
+        <li><strong>&lt;p&gt;</strong> : Utilisé pour créer des paragraphes.</li>
+        <li><strong>&lt;a&gt;</strong> : Crée des liens hypertextes vers d'autres pages ou ressources.</li>
+        <li><strong>&lt;img&gt;</strong> : Affiche une image sur la page.</li>
+        <li><strong>&lt;div&gt;</strong> : Un conteneur générique pour organiser les sections de contenu.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. Exemples d'utilisation des éléments</h2>
+      <p>Voici quelques exemples d'utilisation courante des éléments HTML :</p>
+
+      <h3>1. Un titre et un paragraphe</h3>
+      <code>&lt;h1&gt;Bienvenue sur mon site&lt;/h1&gt;</code><br>
+      <code>&lt;p&gt;Ceci est un paragraphe qui explique le contenu de la page.&lt;/p&gt;</code>
+
+      <h3>2. Un lien hypertexte</h3>
+      <code>&lt;a href="https://www.example.com"&gt;Visitez notre site web&lt;/a&gt;</code><br>
+      <p>Ce code crée un lien vers un autre site web.</p>
+
+      <h3>3. Une image</h3>
+      <code>&lt;img src="image.jpg" alt="Description de l'image"&gt;</code><br>
+      <p>Ce code affiche une image sur la page avec une description alternative si l'image ne peut pas être chargée.</p>
+    </section>
+
+    <section>
+      <h2>4. Structure générale d'une page HTML</h2>
+      <p>Voici un exemple de structure HTML simple :</p>
+      <code>
+        &lt;!DOCTYPE html&gt;<br>
+        &lt;html&gt;<br>
+        &nbsp;&nbsp;&lt;head&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Titre de la page&lt;/title&gt;<br>
+        &nbsp;&nbsp;&lt;/head&gt;<br>
+        &nbsp;&nbsp;&lt;body&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Bienvenue&lt;/h1&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Ceci est un paragraphe.&lt;/p&gt;<br>
+        &nbsp;&nbsp;&lt;/body&gt;<br>
+        &lt;/html&gt;
+      </code>
+      <p>Cette structure est utilisée comme point de départ pour la création de n'importe quelle page web.</p>
+    </section>
+
+    <section>
+      <h2>Conclusion</h2>
+      <p>
+        Les éléments HTML sont les blocs de construction de base des pages web. En comprenant comment utiliser correctement ces éléments, vous pouvez structurer et afficher votre contenu de manière efficace. Ils sont essentiels pour créer des sites web bien organisés et accessibles.
+      </p>
+    </section>
+  </div>
+</body>
+</html>

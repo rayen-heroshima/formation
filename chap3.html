@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about HTML attributes and how they are used to define characteristics of HTML elements.">
+  <meta name="keywords" content="HTML, Attributes, Web development, HTML elements">
+  <meta name="author" content="Your Name">
+  <title>Understanding HTML Attributes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+    .container {
+      max-width: 960px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    section {
+      margin-bottom: 20px;
+    }
+    section h2 {
+      color: #555;
+    }
+    p {
+      color: #666;
+      line-height: 1.6;
+    }
+    code {
+      background-color: #eee;
+      padding: 2px 5px;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <nav style="background-color: #333; padding: 10px; text-align: center;">
+    <a href="./chap3.html" style="color: white; text-decoration: none; margin-right: 15px;">Attributs HTML</a>
+    <a href="./index.html"   style="color: white; text-decoration: none; margin-right: 15px;">Éléments HTML</a>
+    <a href="./chap2.html" style="color: white; text-decoration: none; margin-right: 15px;">Formulaires HTML</a>
+    <a href="./chap1.html"  style="color: white; text-decoration: none;">Importance des Meta</a>
+  </nav>
+  <div class="container">
+    <h1>Understanding HTML Attributes</h1>
+
+    <section>
+      <h2>1. What Are HTML Attributes?</h2>
+      <p>
+        Attributes in HTML provide additional information about an element. They are always included in the opening tag and usually come in name-value pairs, like this:
+      </p>
+      <code>&lt;element attribute="value"&gt;Content&lt;/element&gt;</code>
+      <p>
+        Most HTML elements can have attributes, which define characteristics like ID, class, style, and more.
+      </p>
+    </section>
+
+    <section>
+      <h2>2. Common HTML Attributes</h2>
+      <p>Here are some of the most commonly used attributes in HTML:</p>
+      <ul>
+        <li><strong>class</strong>: Specifies one or more class names for an element (used for CSS styling or JavaScript).</li>
+        <li><strong>id</strong>: Specifies a unique id for an element (must be unique within the page).</li>
+        <li><strong>href</strong>: Specifies the URL for a link (<code>&lt;a&gt;</code> element).</li>
+        <li><strong>src</strong>: Specifies the source of an image (<code>&lt;img&gt;</code> element).</li>
+        <li><strong>alt</strong>: Specifies alternative text for an image, if the image cannot be displayed.</li>
+        <li><strong>style</strong>: Specifies inline CSS styles for an element.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. Example of Attributes in Action</h2>
+      <p>Let's look at some examples of how attributes are used in HTML:</p>
+
+      <h3>1. Using the <code>href</code> Attribute</h3>
+      <p>
+        The <code>href</code> attribute is used in <code>&lt;a&gt;</code> (anchor) elements to specify the URL:
+      </p>
+      <code>&lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;</code>
+      <p>
+        This creates a hyperlink to <a href="https://www.w3schools.com/html/html_attributes.asp">Visit Example</a>.
+      </p>
+
+      <h3>2. Using the <code>src</code> and <code>alt</code> Attributes</h3>
+      <p>
+        The <code>src</code> attribute is used in <code>&lt;img&gt;</code> elements to specify the image file, and <code>alt</code> provides alternative text:
+      </p>
+      <code>&lt;img src="image.jpg" alt="A description of the image"&gt;</code>
+      <p>
+        This tag displays an image, and if the image cannot load, the alt text will be shown instead.
+      </p>
+
+      <h3>3. Using the <code>class</code> Attribute</h3>
+      <p>
+        The <code>class</code> attribute is used to apply CSS styles or for JavaScript. Here's an example:
+      </p>
+      <code>&lt;div class="container"&gt;Content here&lt;/div&gt;</code>
+      <p>
+        This div element can now be styled using the <code>.container</code> class in CSS.
+      </p>
+    </section>
+
+    <section>
+      <h2>4. Attributes vs Properties</h2>
+      <p>
+        It is important to note the difference between HTML attributes and DOM properties. Attributes are defined in HTML, but once the page is loaded, they become part of the Document Object Model (DOM) and are represented as properties. You can use JavaScript to manipulate these properties.
+      </p>
+    </section>
+
+    <section>
+      <h2>Conclusion</h2>
+      <p>
+        HTML attributes are essential for providing additional information and functionality to elements. They help to define characteristics such as styles, behavior, and more, making web pages more interactive and visually engaging.
+      </p>
+    </section>
+  </div>
+</body>
+</html>
